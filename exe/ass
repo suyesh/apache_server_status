@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require 'apache_server_status'
+
+ApacheServerStatus.hello

@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'apache_server_status'
+r#equire 'apache_server_status'
 
 class Ass < Sinatra::Base
     set :static, true
@@ -8,6 +8,6 @@ class Ass < Sinatra::Base
     set :views,  File.expand_path('../views', __FILE__)
 
     get '/' do
-        haml :'/index'
+        erb :'/index'
     end
 end
