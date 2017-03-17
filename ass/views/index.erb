@@ -6,36 +6,36 @@
                  Requests
               </div>
               <div class="box">
-                   56
+                   <%= @requests %>
               </div>
             </div>
-            <div class="requests_second">
+            <div class="idle">
                 <div class="title">
-                    Requests/sec
+                    Idle workers
                 </div>
                 <div class="box">
-                     4
+                     <%= @idle_workers %>
                 </div>
             </div>
         </div>
         <div class="hardware">
+          <div class="requests_second">
+              <div class="title">
+                  Requests/sec
+              </div>
+              <div class="box">
+                   <%= @requests_per_second %>
+              </div>
+          </div>
             <div class="cpu">
                 <div class="title">
-                    CPU usage
+                    CPU %
                 </div>
                 <div class="box">
-                     33 %
+                     <!-- 33 % -->
+                     <%= @cpu %>
                 </div>
             </div>
-            <div class="memory">
-                <div class="title">
-                    Memory Usage
-                </div>
-                <div class="box">
-                     9 GB
-                </div>
-            </div>
-
         </div>
         <div class="other">
             <div class="load_average">
@@ -43,15 +43,15 @@
                     Load Average
                 </div>
                 <div class="box">
-                     4.7
+                     <%= @load_average %>
                 </div>
             </div>
-            <div class="idle">
+            <div class="memory">
                 <div class="title">
-                    Idle workers
+                    <%= @size_title %>
                 </div>
                 <div class="box">
-                     60
+                     <%= @size_per_request %>
                 </div>
             </div>
         </div>
