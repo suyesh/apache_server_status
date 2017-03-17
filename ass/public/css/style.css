@@ -1,0 +1,30 @@
+.main-box {
+  width: 90%;
+  height: 400px;
+  background-color: grey;
+  margin: 0 auto;
+  display: flex;
+}
+
+.main-box-children-1 {
+  background-color: red;
+  flex: 1 1 0;
+  height: 180px;
+}
+
+.main-box-children-2 {
+  background-color: green;
+  flex: 1 1 0;
+
+}
+
+.main-box-children-3 {
+  background-color: blue;
+  flex: 1 1 0;
+
+}
+
+.main-box-children-4 {
+  background-color: orange;
+  flex: 1 1 0;
+}
