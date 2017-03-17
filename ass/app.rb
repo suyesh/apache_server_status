@@ -6,5 +6,5 @@ require 'nokogiri'
 
 
 get '/' do
-    erb :index
+  erb :index
 end
