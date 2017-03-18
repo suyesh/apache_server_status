@@ -12,6 +12,10 @@
     padding: 10px;
 }
 
+#appname {
+  color: black;
+}
+
 .title {
     color: #bdc3c7;
     font-size: 50px;
@@ -27,6 +31,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  margin-bottom: 20px;
 }
 
 .request-log {

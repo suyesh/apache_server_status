@@ -1,58 +1,57 @@
-
-    <div class="main-container">
-        <div class="request-log">
-            <div class="requests">
-              <div class="title">
-                 Requests
-              </div>
-              <div class="box">
-                   <%= @requests %>
-              </div>
+<div class="main-container">
+    <div class="request-log">
+        <div class="requests">
+            <div class="title">
+                Requests
             </div>
-            <div class="idle">
-                <div class="title">
-                    Idle workers
-                </div>
-                <div class="box">
-                     <%= @idle_workers %>
-                </div>
+            <div class="box">
+                <%= @requests %>
             </div>
         </div>
-        <div class="hardware">
-          <div class="requests_second">
-              <div class="title">
-                  Requests/sec
-              </div>
-              <div class="box">
-                   <%= @requests_per_second %>
-              </div>
-          </div>
-            <div class="cpu">
-                <div class="title">
-                    CPU %
-                </div>
-                <div class="box">
-                     <!-- 33 % -->
-                     <%= @cpu %>
-                </div>
+        <div class="idle">
+            <div class="title">
+                Idle workers
             </div>
-        </div>
-        <div class="other">
-            <div class="load_average">
-                <div class="title">
-                    Load Average
-                </div>
-                <div class="box">
-                     <%= @load_average %>
-                </div>
-            </div>
-            <div class="memory">
-                <div class="title">
-                    <%= @size_title %>
-                </div>
-                <div class="box">
-                     <%= @size_per_request %>
-                </div>
+            <div class="box">
+                <%= @idle_workers %>
             </div>
         </div>
     </div>
+    <div class="hardware">
+        <div class="requests_second">
+            <div class="title">
+                Requests/sec
+            </div>
+            <div class="box">
+                <%= @requests_per_second %>
+            </div>
+        </div>
+        <div class="cpu">
+            <div class="title">
+                CPU %
+            </div>
+            <div class="box">
+                <!-- 33 % -->
+                <%= @cpu %>
+            </div>
+        </div>
+    </div>
+    <div class="other">
+        <div class="load_average">
+            <div class="title">
+                Load Average
+            </div>
+            <div class="box">
+                <%= @load_average %>
+            </div>
+        </div>
+        <div class="memory">
+            <div class="title">
+                <%= @size_title %>
+            </div>
+            <div class="box">
+                <%= @size_per_request %>
+            </div>
+        </div>
+    </div>
+</div>
