@@ -7,12 +7,6 @@ require 'bundler/setup'
 require 'nokogiri'
 require 'open-uri'
 
-helpers do
-  def partial(page, options={})
-    erb page.to_sym, options.merge!(:layout => false)
-  end
-end
-
 def set_server(server)
     if server == 'app01'
         'http://dot55simsapp01.dot.nycnet/server-status'
