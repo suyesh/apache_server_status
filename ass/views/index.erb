@@ -1,57 +1,61 @@
-<div class="main-container">
-    <div class="request-log">
-        <div class="requests">
-            <div class="title">
-                Requests
+<div class="container">
+    <div class="main-container">
+        <div class="request-log">
+            <div class="requests">
+                <div class="title">
+                    Requests
+                </div>
+                <div class="box box-requests"></div>
             </div>
-            <div class="box">
-                <%= @requests %>
-            </div>
-        </div>
-        <div class="idle">
-            <div class="title">
-                Idle workers
-            </div>
-            <div class="box">
-                <%= @idle_workers %>
+            <div class="idle">
+                <div class="title">
+                    Idle workers
+                </div>
+                <div class="box box-idle-workers"></div>
             </div>
         </div>
-    </div>
-    <div class="hardware">
-        <div class="requests_second">
-            <div class="title">
-                Requests/sec
+        <div class="hardware">
+            <div class="requests_second">
+                <div class="title">
+                    Requests/sec
+                </div>
+                <div class="box box-requests-per-second"></div>
             </div>
-            <div class="box">
-                <%= @requests_per_second %>
-            </div>
-        </div>
-        <div class="cpu">
-            <div class="title">
-                CPU %
-            </div>
-            <div class="box">
-                <!-- 33 % -->
-                <%= @cpu %>
+            <div class="cpu">
+                <div class="title">
+                    CPU %
+                </div>
+                <div class="box box-cpu"></div>
             </div>
         </div>
-    </div>
-    <div class="other">
-        <div class="load_average">
-            <div class="title">
-                Load Average
+        <div class="other">
+            <div class="load_average">
+                <div class="title">
+                    Load Average
+                </div>
+                <div class="box box-load-average"></div>
             </div>
-            <div class="box">
-                <%= @load_average %>
-            </div>
-        </div>
-        <div class="memory">
-            <div class="title">
-                <%= @size_title %>
-            </div>
-            <div class="box">
-                <%= @size_per_request %>
+            <div class="memory">
+                <div class="title box-title"></div>
+                <div class="box box-size-per-req"></div>
             </div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        setInterval(function () {
+            $.getJSON('http://localhost:4567/stat/simstcdstg', function (data) {
+                $(".box-requests").text(data.requests);
+                $(".box-idle-workers").text(data.idle_workers);
+                $(".box-requests-per-second").text(data.requests_per_second);
+                $(".box-cpu").text(data.cpu);
+                $(".box-load-average").text(data.load_average);
+                $(".box-size-per-req").text(data.size_per_request);
+                $(".box-title").text(data.size_title);
+            });
+        }, 100);
+    });
+</script>
