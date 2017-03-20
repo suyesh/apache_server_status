@@ -33,3 +33,6 @@ You should see the following message:
 ```
 
 Now navigate to 'localhost:4567' and you will see a web interface with a form to add domain. Provide full domain without 'http' or 'https', just 'yourDomaninName.com'. You can provide as many you want. And navigate through the servers to track status.
+
+
+Thanks [Jeff](https://github.com/Jeff-Russ) and [Cody](https://github.com/codyrobbins) For helping with Javascript Monster.
