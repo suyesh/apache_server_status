@@ -33,16 +33,17 @@ $("#domain-name-button").click(function() {
         ' ' + domain + '</em> has been successfylly added to your servers list.');
     $("#notification").fadeOut(1000);
     $("#notification .alert").remove();
-    $( "#servers li a:contains('" + domain + "')").click(addActiveClass);
+    $( "#servers li a".click(addActiveClass);
 });
 
-// $("#domain-name").keypress(function(e) {
-//     if (e.which == 13) {
-//         var domain = $('#domain-name').val();
-//         $("#servers").append('<li role="separator" class="divider"></li>');
-//         $("#servers").append('<li><a href="#">' + domain + '</a></li>');
-//         $("#notification").append('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Success!</strong><em>' +
-//             ' ' + domain + '</em> has been successfylly added to your servers list.');
-//         $("#notification").fadeOut(1000);
-//     }
-// });
+$("#domain-name").keypress(function(e) {
+    if (e.which == 13) {
+        var domain = $('#domain-name').val();
+        $("#servers").append('<li role="separator" class="divider"></li>');
+        $("#servers").append('<li><a href="#">' + domain + '</a></li>');
+        $("#notification").append('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Success!</strong><em>' +
+            ' ' + domain + '</em> has been successfylly added to your servers list.');
+        $("#notification").fadeOut(1000);
+        $( "#servers li a".click(addActiveClass);
+    }
+});
