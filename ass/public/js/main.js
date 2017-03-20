@@ -33,7 +33,7 @@ $("#domain-name-button").click(function() {
         ' ' + domain + '</em> has been successfylly added to your servers list.');
     $("#notification").fadeOut(1000);
     $("#notification .alert").remove();
-    $( "#servers li a".click(addActiveClass);
+    $( "#servers li a").click(addActiveClass);
 });
 
 $("#domain-name").keypress(function(e) {
@@ -44,6 +44,6 @@ $("#domain-name").keypress(function(e) {
         $("#notification").append('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><strong>Success!</strong><em>' +
             ' ' + domain + '</em> has been successfylly added to your servers list.');
         $("#notification").fadeOut(1000);
-        $( "#servers li a".click(addActiveClass);
+        $( "#servers li a").click(addActiveClass);
     }
 });
