@@ -2,7 +2,7 @@
 
 A simple ruby gem that provides a pretty web interface to track apache server status in real time.
 
-![Server Status](https://ibb.co/cvTrrF)
+![Server Status](http://res.cloudinary.com/dvnjqhdxp/image/upload/v1490048069/ezgif.com-video-to-gif.gif)
 
 
 ## PREREQUIREMENT (IMPORTANT)
