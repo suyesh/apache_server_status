@@ -10,9 +10,9 @@ A simple ruby gem that provides a pretty web interface to track apache server st
 You need to have mod_status installed in your server. Example of how to install: [CentOs specific example](http://www.tecmint.com/monitor-apache-web-server-load-and-page-statistics/). After installing make sure yoursevername.com/server-status is functioning.
 
 ## Installation
-Or install it yourself as:
+Install it as:
 
-    $ gem install apache_server_status 
+    $ gem install apache_server_status
 
 
 ## USAGE
