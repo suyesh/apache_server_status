@@ -12,7 +12,7 @@ You need to have mod_status installed in your server. Example of how to install:
 ## Installation
 Or install it yourself as:
 
-    $ gem install apache_server_status --pre
+    $ gem install apache_server_status 
 
 
 ## USAGE
