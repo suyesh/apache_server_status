@@ -80,6 +80,15 @@
     height: 300px;
 }
 
+.nav > li > a:hover {
+  background-color: #34495e;
+}
+
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
   background-color: #34495e;
+}
+
+.nav > li > a {
+  color: white;
+  background-color: #337ab7;
 }
