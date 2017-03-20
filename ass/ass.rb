@@ -1,4 +1,3 @@
-require "apache_server_status/version"
 require 'rubygems'
 require 'sinatra'
 require 'sinatra/contrib'

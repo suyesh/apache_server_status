@@ -1,0 +1,3 @@
+require "./ass"
+
+run Ass

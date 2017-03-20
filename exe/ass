@@ -2,4 +2,4 @@
 
 require 'apache_server_status'
 
-ApacheServerStatus.hello
+Ass.run!
