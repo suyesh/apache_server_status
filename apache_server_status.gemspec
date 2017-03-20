@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
     spec.email         = ['suyeshb@gmail.com']
 
     spec.summary       = 'Beautify apache server status'
-    spec.description   = 'Beautify apache server status'
+    spec.description   = 'A simple ruby gem that provides a pretty web interface to track apache server status in real time.'
     spec.homepage      = 'https://github.com/suyesh/apache_server_status'
     spec.license       = 'MIT'
 
