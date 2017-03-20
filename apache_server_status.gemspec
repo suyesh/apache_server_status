@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
     spec.email         = ['suyeshb@gmail.com']
 
     spec.summary       = 'Beautify apache server status'
-    spec.description   = 'Beautify apache server status'
+    spec.description   = 'A simple ruby gem that provides a pretty web interface to track apache server status in real time.'
     spec.homepage      = 'https://github.com/suyesh/apache_server_status'
     spec.license       = 'MIT'
 
@@ -32,6 +32,7 @@ Gem::Specification.new do |spec|
     spec.add_development_dependency 'bundler', '~> 1.14'
     spec.add_development_dependency 'rake', '~> 10.0'
     spec.add_dependency 'sinatra', '~> 1.4', '>= 1.4.8'
+    spec.add_dependency 'sinatra-contrib'
     spec.add_dependency 'nokogiri', '~> 1.7', '>= 1.7.0.1'
     spec.add_dependency 'thor', '~> 0.19.4'
 end
