@@ -16,7 +16,9 @@ get '/:server' do
               url = "http://#{params[:server]}/server-status"
               doc = Nokogiri::HTML(open(url))
               json(cpu: doc.css('dl')[1].children[15].text.split[7][0..-2],
-                   load_average: doc.css('dl')[1].children[11].text.split[2],
+                   load_average1: doc.css('dl')[1].children[11].text.split[2],
+                   load_average2: doc.css('dl')[1].children[11].text.split[3],
+                   load_average3: doc.css('dl')[1].children[11].text.split[4],
                    requests_per_second: doc.css('dl')[1].children[17].text.split[0],
                    requests: doc.css('dl')[1].children[19].text.split[0],
                    idle_workers: doc.css('dl')[1].children[19].text.split[5],
@@ -26,7 +28,9 @@ get '/:server' do
               url = "https://#{params[:server]}/server-status"
               doc = Nokogiri::HTML(open(url))
               json(cpu: doc.css('dl')[1].children[15].text.split[7][0..-2],
-                   load_average: doc.css('dl')[1].children[11].text.split[2],
+                   load_average1: doc.css('dl')[1].children[11].text.split[2],
+                   load_average2: doc.css('dl')[1].children[11].text.split[3],
+                   load_average3: doc.css('dl')[1].children[11].text.split[4],
                    requests_per_second: doc.css('dl')[1].children[17].text.split[0],
                    requests: doc.css('dl')[1].children[19].text.split[0],
                    idle_workers: doc.css('dl')[1].children[19].text.split[5],
@@ -35,7 +39,9 @@ get '/:server' do
           end
       rescue
           json(cpu: '--/--',
-               load_average: '--/--',
+               load_average1: '--/--',
+               load_average2: '--/--',
+               load_average3: '--/--',
                requests_per_second: '--/--',
                requests: '--/--',
                idle_workers: '--/--',

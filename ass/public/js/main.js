@@ -16,7 +16,9 @@ function addActiveClass() {
             $(".box-idle-workers").text(data.idle_workers);
             $(".box-requests-per-second").text(data.requests_per_second);
             $(".box-cpu").text(data.cpu);
-            $(".box-load-average").text(data.load_average);
+            $(".load-number1").text(data.load_average1);
+            $(".load-number2").text(data.load_average2);
+            $(".load-number3").text(data.load_average3);
             $(".box-size-per-req").text(data.size_per_request);
             $(".box-title").text(data.size_title);
         });
