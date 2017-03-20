@@ -1,7 +1,6 @@
 require "apache_server_status/version"
 require 'rubygems'
 require 'sinatra'
-require 'sinatra/contrib'
 require 'sinatra/json'
 require 'nokogiri'
 require 'open-uri'
