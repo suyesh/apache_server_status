@@ -5,9 +5,13 @@ A simple ruby gem that provides a pretty web interface to track apache server st
 ![Server Status](http://res.cloudinary.com/dvnjqhdxp/image/upload/v1490048069/ezgif.com-video-to-gif.gif)
 
 
-## PREREQUIREMENT (IMPORTANT)
+## PRE-REQUIREMENT (IMPORTANT)
 
 You need to have mod_status installed in your server. Example of how to install: [CentOs specific example](http://www.tecmint.com/monitor-apache-web-server-load-and-page-statistics/). After installing make sure yoursevername.com/server-status is functioning.
+
+This is a Ruby gem so you need to have [Ruby](https://www.ruby-lang.org/en/) installed. And also make sure you have [Nokogiri](http://www.nokogiri.org/) installed.
+
+NOTE: Chrome is the only supported browser.
 
 ## Installation
 Install it as:
